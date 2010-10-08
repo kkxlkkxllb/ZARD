@@ -1,0 +1,13 @@
+= form_for @movie do |f|
+	%p
+	= f.label :title
+	= f.text_field :title
+	= f.label :image
+	= f.text_field :image
+	= f.label :url
+	= f.text_field :url
+	%p
+	=	f.label :info
+	= f.text_area :info
+	%p
+	= f.submit

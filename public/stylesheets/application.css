@@ -1,0 +1,194 @@
+body{
+	background-color: #dffef2;
+	}
+a{
+	text-decoration: none;
+	color: #e4cce7;
+}
+a:hover{
+	color: #ff9131;
+}
+h1{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #dffa7c;
+}
+.round {
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px;
+	
+	}
+.shadow{
+	-moz-box-shadow:0 0 10px #040307;
+	-webkit-box-shadow:0 0 10px #040307;
+}
+.clear{
+	clear: both;
+}
+.field{
+	float: right;
+}
+.form{
+	width: 350px;
+	background-color: #6ed6fb;
+	padding: 10px;
+}
+.nav li{
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.side li{
+	display: block;
+}
+#container{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+#head{
+	width: 1000px;
+	height: 100px;
+	background-color: #fda391;
+	padding: 10px;
+}
+#left{
+	width: 750px;
+	float: left;
+}
+#right{
+	width: 245px;
+	height: 100px;
+	float: right;
+}
+#navigation{
+	width: 750px;
+	background-color: #c9fcdf;
+}
+#main{
+	width: 780px;
+	float: left;
+	background-color: #5e5e5e;
+	padding: 10px;
+}
+#sidebar{
+	width: 180px;
+	height: auto;
+	float: right;
+	background-color: #7983f6;
+	padding: 8px;
+}
+#count{
+	width: 170px;
+}
+#friend-link{
+	width: 180px;
+	background-color: #5e5e5e;
+}
+#my-link{
+	width: 180px;
+	background-color: #95e4fc;
+}
+#sister-info{
+	width: 760px;
+	height: 430px;
+	background-color: #d1fa8b;
+	padding: 10px;
+	font-family: Optima, "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #5e5e5e;
+}
+#left-info{
+	width: 270px;
+	float: left;
+}
+#coin-slider{
+	width: 480px;
+	float: right;
+	background-color: #f9fccb;
+}
+/*songs*/
+.category{
+	width: 776px;
+	height: 180px;
+	background-color: #aefdf4;
+	border-style: solid;
+	border-color: #c4fbc3;
+}
+.category-image{
+	width: 200px;
+	height: 180px;
+	float: left;
+}
+.category-info{
+	width: 500px;
+	height: 80px;
+	float: right;
+	padding: 20px;
+	color: #82b5f9;
+	font-size: 20px;
+}
+.toggle{
+	width: 776px;
+	border-style: solid;
+	border-color: #cfd3fb;
+	background-color: #ffe5f9;
+	display: none;
+}
+.song li{
+	display: block;
+	line-height: 25px;
+	font-weight: bold;
+	color: #646464;
+}
+.song li a:hover{
+	background-color: #97edfd;
+}
+.love{
+	color: #8d97f7;
+}
+#song-end{
+	width: 780px;
+	height: 28px;
+	color: #7983f6;
+	background-color: #ebd3da;
+	font-size: 24px;
+	text-align: center;
+}
+/*images*/
+.image{
+	width: 180px;
+	height: 150px;
+	border-style: ridge;
+	border-color: #e6fbae;
+	float: left;
+	margin: 4px;
+}
+.manage-img{
+	width: 240px;
+	height: 150px;
+	border-style: ridge;
+	border-color: #8b98f7;
+	float: left;
+	background-color: #b7fdf8;
+}
+/*movies*/
+.movie{
+	width: 776px;
+	height: 180px;
+	background-color: #aefdf4;
+	border-style: solid;
+	border-color: #c4fbc3;
+}
+.movie-image{
+	width: 200px;
+	height: 180px;
+	float: left;
+}
+.movie-info{
+	width: 550px;
+	float: right;
+}
+#board{
+	width: 180px;
+	background-color: #a0faaf;
+}

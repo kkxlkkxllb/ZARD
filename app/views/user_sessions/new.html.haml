@@ -1,0 +1,13 @@
+.form.round
+	- form_for @user_session,:url => user_session_path do |f|
+		%p
+		= f.label :login
+		= f.text_field :login
+		%p
+		= f.label :password
+		= f.password_field :password
+		%p
+		= f.check_box :remember_me
+		= f.label :remember_me
+		%p
+		= f.submit "Login"

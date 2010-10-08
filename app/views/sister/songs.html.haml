@@ -1,0 +1,27 @@
+- for category in @categories
+	.category
+		.category-image
+			= image_tag(category.image,:width=>"200",:height=>"180")
+		.category-info
+			%h3
+			= link_to category.title,toggle_url(category),:remote => true,:class=>"tip",:title=>"点击查看/隐藏歌曲列表"
+			- if current_user
+				= link_to "Delete",delete_url(category)
+			%p
+			= category.date.strftime('%Y-%m')
+	.toggle{:id => dom_id(category)}
+		- @songs = Song.where(["category_id = ?",category.id])
+		%ul.song
+			- for song in @songs
+				%li
+					= song.title 
+					= link_to "欣赏音乐",listen_url(song),:class =>"listen"
+					= link_to "LOVE IT",love_url(song),:remote=>true,:class=>dom_id(song)
+					.love{:id => dom_id(song)}
+						= song.love
+						human love
+#song-end.round
+	%p
+	以上内容选自ZARD Official，大家可以听歌学日语啦
+			
+		

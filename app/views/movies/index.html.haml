@@ -1,0 +1,11 @@
+%table
+  %tr
+    %th Title
+    %th Image
+    
+
+  - @movies.each do |movie|
+    %tr
+      %td= movie.title
+      %td= image_tag(movie.image,:width=>"180",:height=>"150")
+      %td= link_to 'Edit', edit_movie_path(movie)

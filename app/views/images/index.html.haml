@@ -1,0 +1,4 @@
+- @images.each do |image|
+	.manage-img
+		= image_tag(image.url,:width=>"180",:height=>"150")
+		= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete

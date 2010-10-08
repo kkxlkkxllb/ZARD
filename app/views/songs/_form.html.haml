@@ -1,0 +1,13 @@
+= form_for @song do |f|
+	%p
+	= f.label :title
+	= f.text_field :title
+	= f.label :url
+	= f.text_field :url
+	= f.label :category_id
+	= f.select :category_id,Category.all.collect{|s| [s.title,s.id]}
+	%p
+	= f.label :lyric
+	= f.text_area :lyric
+	%p
+	= f.submit 'Save'

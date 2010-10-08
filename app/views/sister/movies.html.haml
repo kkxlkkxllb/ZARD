@@ -1,0 +1,10 @@
+%h2 ZARD 影像资料
+- for movie in @movies
+	.movie
+		.movie-image
+			= image_tag(movie.image,:width=>"200",:height=>"180")
+		.movie-info
+			= link_to movie.title,movie.url
+			%p
+			=raw movie.info
+

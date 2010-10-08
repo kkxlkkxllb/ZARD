@@ -1,0 +1,35 @@
+!!!
+%html
+	%head
+		%title 
+			= @title
+		= stylesheet_link_tag :all 
+		= javascript_include_tag :defaults,'jquery.cleditor.min.js','coin-slider.min.js','jquery.poshytip.min.js','jquery.nyroModal-1.6.2.min.js'
+		= csrf_meta_tag
+	%body
+		#container
+			#head.round.shadow
+				#left
+					%h1 
+						= @title
+					#navigation.round
+						%ul.nav
+							%li= link_to_unless_current "Home",root_path,:class => "tip",:title=>"ZARD首页",:alt =>"ZARD首页"
+							%li= link_to_unless_current "Songs",zard_songs_path,:class =>"tip",:title=>"所有歌曲",:alt=>"所有歌曲"
+							%li= link_to_unless_current "Images",zard_images_path,:class=>"tip",:title=>"姐姐的图像",:alt=>"姐姐的图像"
+							%li= link_to_unless_current "Movies",zard_movies_path,:class=>"tip",:title=>"所有影象",:alt=>"所有影象"
+							- if current_user
+								%li= link_to_unless_current "MSong",songs_path
+								%li= link_to_unless_current "NewImage",new_image_path
+								%li= link_to_unless_current "MMovie",movies_path
+								%li= link_to "Logout",logout_path
+							- else
+								%li= link_to_unless_current "Login",login_path
+				#right
+					= image_tag("zard-c.jpg")
+			#main.round
+				= yield
+			#sidebar.round
+				= render :partial => 'sidebar'
+				
+
