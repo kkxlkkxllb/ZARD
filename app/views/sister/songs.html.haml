@@ -8,9 +8,13 @@
 			- if current_user
 				= link_to "Delete",delete_url(category)
 			%p
+			发行日期：
 			= category.date.strftime('%Y-%m')
+			- @songs = Song.where(["category_id = ?",category.id]).order("love DESC")
+			%br
+			= @songs.size
+			首已收录
 	.toggle{:id => dom_id(category)}
-		- @songs = Song.where(["category_id = ?",category.id])
 		%ul.song
 			- for song in @songs
 				%li
