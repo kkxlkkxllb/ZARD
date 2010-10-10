@@ -1,6 +1,6 @@
 body{
-	background-color: #dffef2;
-	}
+	background-color: #ebdcfb;
+}
 a{
 	text-decoration: none;
 	color: #e4cce7;
@@ -10,7 +10,7 @@ a:hover{
 }
 h1{
 	font-family: Georgia, "Times New Roman", Times, serif;
-	background-color: #dffa7c;
+	color: #ffd285;
 }
 .round {
 	-moz-border-radius:10px 10px 10px 10px;
@@ -50,21 +50,21 @@ h1{
 #head{
 	width: 1000px;
 	height: 100px;
-	background-color: #fda391;
 	padding: 10px;
+	background-image: url(/images/bg.jpg);
 }
 #left{
 	width: 750px;
 	float: left;
 }
 #right{
-	width: 245px;
-	height: 100px;
+	width: 230px;
+	height: 98px;
 	float: right;
-}
+	}
 #navigation{
-	width: 750px;
-	background-color: #c9fcdf;
+	width: 750px;	
+	background-color: rgba(201,252,223,0.74);
 }
 #main{
 	width: 780px;
@@ -207,4 +207,9 @@ h1{
 	background-color: #4e596a;
 	padding: 3px;
 	text-align: center;
+}
+#clock{
+	width: 140px;
+	height: 290px;
+	margin: 20px;
 }
