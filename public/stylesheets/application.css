@@ -40,6 +40,7 @@ h1{
 }
 .side li{
 	display: block;
+	line-height: 30px;
 }
 #container{
 	width: 1000px;
@@ -87,7 +88,7 @@ h1{
 }
 #my-link{
 	width: 180px;
-	background-color: #95e4fc;
+	background-color: #7d8fa1;
 }
 #sister-info{
 	width: 760px;
@@ -139,9 +140,15 @@ h1{
 	line-height: 25px;
 	font-weight: bold;
 	color: #646464;
+	border-bottom-style: solid;
+	border-bottom-color: #addffc;
 }
 .song li a:hover{
 	background-color: #97edfd;
+}
+.listen{
+	float: right;
+	background-color: #e4ecfd;
 }
 .love{
 	color: #8d97f7;
@@ -150,7 +157,7 @@ h1{
 	width: 780px;
 	height: 28px;
 	color: #7983f6;
-	background-color: #ebd3da;
+	background-color: #c4e7c6;
 	font-size: 24px;
 	text-align: center;
 }
@@ -163,6 +170,9 @@ h1{
 	float: left;
 	margin: 4px;
 }
+.link{
+	border: 0px;
+	}
 .manage-img{
 	width: 240px;
 	height: 150px;
@@ -191,4 +201,10 @@ h1{
 #board{
 	width: 180px;
 	background-color: #a0faaf;
+}
+.paginate{
+	width: 780px;
+	background-color: #4e596a;
+	padding: 3px;
+	text-align: center;
 }

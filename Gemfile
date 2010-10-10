@@ -12,7 +12,7 @@ gem 'haml-rails'
 gem 'authlogic', :git => 'http://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 # Use unicorn as the web server
 # gem 'unicorn'
-
+gem 'will_paginate','~> 3.0.pre2'
 # Deploy with Capistrano
 # gem 'capistrano'
 

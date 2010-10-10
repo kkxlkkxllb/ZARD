@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   # GET /songs
   # GET /songs.xml
   def index
-    @songs = Song.all
+    @songs = Song.paginate :page => params[:page],:per_page => 20,:order => 'category_id ASC'
     @title = "Manage Songs"
     respond_to do |format|
       format.html # index.html.haml

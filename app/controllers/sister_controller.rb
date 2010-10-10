@@ -5,13 +5,13 @@ class SisterController < ApplicationController
 
   def songs
     @title = "Songs"
-    @categories = Category.all
+    @categories = Category.paginate :page => params[:page],:per_page => 7
     
   end
 
   def images
     @title = "Images"
-    @images = Image.all
+    @images = Image.paginate :page => params[:page], :per_page => 12
   end
 
   def movies
