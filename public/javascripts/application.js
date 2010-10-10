@@ -18,4 +18,5 @@ $(document).ready(function() {
 	});
 	$('.image a').nyraModal(
 		);
+	
 })
