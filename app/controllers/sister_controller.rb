@@ -1,21 +1,21 @@
 class SisterController < ApplicationController
   def index
-    @title = "ZARD"
+    @title = "Beautiful Heart"
   end
 
   def songs
-    @title = "Songs"
+    @title = "Beautiful Sounds"
     @categories = Category.paginate :page => params[:page],:per_page => 7
     
   end
 
   def images
-    @title = "Images"
+    @title = "Beautiful Memory"
     @images = Image.paginate :page => params[:page], :per_page => 12
   end
 
   def movies
-    @title = "Movies"
+    @title = "Beautiful Moment"
     @movies = Movie.all
   end
   

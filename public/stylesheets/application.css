@@ -10,7 +10,11 @@ a:hover{
 }
 h1{
 	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #ffd285;
+	color: #ffa499;
+	text-shadow: #4d63f1 2px 2px 0;
+}
+h3{
+	color: #c2d6fb;
 }
 .round {
 	-moz-border-radius:10px 10px 10px 10px;
@@ -52,6 +56,8 @@ h1{
 	height: 100px;
 	padding: 10px;
 	background-image: url(/images/bg.jpg);
+	border-style: outset;
+	border-color: #ffe4f5;
 }
 #left{
 	width: 750px;
