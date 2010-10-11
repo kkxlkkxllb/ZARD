@@ -1,0 +1,9 @@
+.paginate.clear.round
+	= will_paginate @images
+- for image in @images
+	.image
+		= link_to image_tag(image.url,:width=>"180",:height=>"150",:class =>"link"),image.url,:class=>"nyroModal",:rel=>"gal"
+.paginate.clear.round
+	= will_paginate @images
+%script
+	QueryLoader.init();

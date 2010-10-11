@@ -1,16 +1,5 @@
-%table
-  %tr
-    %th Title
-    %th Category
-    %th Love
-    
+#songs
+	= render :partial => 'songs' 
 
-  - @songs.each do |song|
-    %tr
-      %td= song.title
-      %td= Category.find(song.category_id).title
-      %td= song.love
-      %td= link_to 'Edit', edit_song_path(song)
-      %td= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete
-
-.paginate.round= will_paginate @songs
+:javascript
+	$('.pagination a').live('click',function(){$(".pagination").html("Page is loading...");$.get(this.href, null, null, "script");return false;});

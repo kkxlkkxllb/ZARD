@@ -1,6 +1,5 @@
-- @images.each do |image|
-	.manage-img
-		= image_tag(image.url,:width=>"180",:height=>"150")
-		= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete
-.paginate.clear.round
-	= will_paginate @images
+#images
+	= render :partial => 'images' 
+
+:javascript
+	$('.pagination a').live('click',function(){$(".pagination").html("Page is loading...");$.get(this.href, null, null, "script");return false;});

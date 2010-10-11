@@ -5,6 +5,7 @@ class SongsController < ApplicationController
     @songs = Song.paginate :page => params[:page],:per_page => 20,:order => 'category_id ASC'
     @title = "Manage Songs"
     respond_to do |format|
+      format.js
       format.html # index.html.haml
       format.xml  { render :xml => @songs }
     end

@@ -1,0 +1,30 @@
+.paginate.clear.round
+	= will_paginate @categories
+- for category in @categories
+	.category
+		.category-image
+			= image_tag(category.image,:width=>"200",:height=>"180")
+		.category-info
+			%h3
+			= link_to category.title,toggle_url(category),:remote => true,:class=>"tip",:title=>"点击查看/隐藏歌曲列表"
+			- if current_user
+				= link_to "Delete",delete_url(category)
+			%p
+			发行日期：
+			= category.date.strftime('%Y-%m')
+			- @songs = Song.where(["category_id = ?",category.id]).order("love DESC")
+			%br
+			= @songs.size
+			首已收录
+	.toggle{:id => dom_id(category)}
+		%ul.song
+			- for song in @songs
+				%li
+					= song.title 
+					= link_to "欣赏音乐",listen_url(song),:class =>"listen"
+					= link_to "LOVE IT",love_url(song),:remote=>true,:class=>dom_id(song)
+					.love{:id => dom_id(song)}
+						= song.love
+						human love
+.paginate.clear.round
+	= will_paginate @categories

@@ -1,9 +1,7 @@
-- for image in @images
-	.image
-		= link_to image_tag(image.url,:width=>"180",:height=>"150",:class =>"link"),image.url,:class=>"nyroModal",:rel=>"gal"
-.paginate.clear.round
-	= will_paginate @images
-%script
-	QueryLoader.init();
-	
+#images
+	= render :partial => 'images' 
+
+:javascript
+	$('.pagination a').live('click',function(){$(".pagination").html("Page is loading...");$.get(this.href, null, null, "script");return false;});
+
 	
