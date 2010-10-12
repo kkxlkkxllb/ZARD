@@ -21,11 +21,11 @@ Plugins Used
 Plugins Info
 ------------
 
-jquery-rails : add jquery support to rails project smartly
-haml   			: i used it to replace the html.erb
-haml-rails : can create .haml file by rails generator auto
-authlogic : used to control user's authentication
-will_paginate : used to paginate @songs and @images
+* jquery-rails : add jquery support to rails project smartly
+* haml   			: i used it to replace the html.erb
+* haml-rails : can create .haml file by rails generator auto
+* authlogic : used to control user's authentication
+* will_paginate : used to paginate @songs and @images
 
 Install
 -------
