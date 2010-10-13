@@ -19,8 +19,8 @@ Zard::Application.routes.draw do
   match "category/:id/destroy" => "songs#destroy_category",:as => :delete
   match "category/:id/toggle" => "sister#song_toggle",:as => :toggle
   match "song/:id/love" => "sister#song_love",:as => :love
-  match "song/:id/listen" => "sister#listen_song",:as => :listen
-  #images
+  match "song/:id/listen" => "sister#listen_song",:as => :listen#display song.lyric page
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,5 +1,6 @@
 body{
 	background-color: #ebdcfb;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 a{
 	text-decoration: none;
@@ -9,7 +10,6 @@ a:hover{
 	color: #ff9131;
 }
 h1{
-	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #ffa499;
 	text-shadow: #4d63f1 2px 2px 0;
 }
