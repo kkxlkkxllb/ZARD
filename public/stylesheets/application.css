@@ -16,13 +16,14 @@ transition:
 
 a{
 	text-decoration: none;
-	color: #e4cce7;
+	color: #e3b4e5;
 }
 a:hover{
 	color: #ff9131;
 }
 h1{
 	color: #b6eaf8;
+	text-shadow: #424242 3px 3px 6px;
 }
 h1:hover{
 	color: #adfa9a;
@@ -56,6 +57,9 @@ h3{
 	margin-right: 10px;
 	margin-left: 10px;
 }
+ul{
+	list-style: none;
+}
 
 .side li{
 	display: block;
@@ -64,7 +68,7 @@ h3{
 }
 .side li:hover{
 background-color: #cdfa8e;
-	right: 30px;
+	right: 20px;
 	position: relative;
 }
 #container{
@@ -132,12 +136,12 @@ background-color: #cdfa8e;
 #coin-slider{
 	width: 480px;
 	float: right;
-	background-color: #f9fccb;
+	border: 6px ridge #ff7c7b;
 }
 /*songs*/
 .category{
 	width: 776px;
-	height: 180px;
+	height: 184px;
 	background-color: #aefdf4;
 	border-style: solid;
 	border-color: #c4fbc3;
@@ -146,6 +150,8 @@ background-color: #cdfa8e;
 	width: 200px;
 	height: 180px;
 	float: left;
+	border-style: ridge;
+	border-color: #6ed6fb;
 }
 .category-info{
 	width: 500px;
