@@ -15,7 +15,7 @@ class SisterController < ApplicationController
 
   def images
     @title = "Beautiful Memory"
-    @images = Image.paginate :page => params[:page], :per_page => 12
+    @images = Image.paginate :page => params[:page], :per_page => 16
     respond_to do |format|
       format.html # index.html.haml
       format.xml  { render :xml => @images }
