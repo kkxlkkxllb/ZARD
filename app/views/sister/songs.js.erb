@@ -1,4 +1,10 @@
 setTimeout(function(){ $('.listen').nyroModal({
 	bgColor:'#ecd8fb'
+});
+$('.tip').poshytip({
+	className: 'tip-twitter',
+		bgImageFrameSize: 9,
+		offsetX: -20,
+		offsetY: 20		
 });}, 1000);
 $("#songs").html("<%= escape_javascript(render('songs'))%>");
