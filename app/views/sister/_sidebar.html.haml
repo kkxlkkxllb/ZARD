@@ -1,34 +1,37 @@
 #count
-	<!-- GoStats JavaScript Based Code -->
-	<script type="text/javascript" src="http://gostats.cn/js/counter.js"></script>
-	<script type="text/javascript">_gos='monster.gostats.cn';_goa=441513;
-	_got=7;_goi=3;_goz=0;_god='hosts';_gol='计数器申请';_GoStatsRun();</script>
-	<noscript><a target="_blank" title="计数器申请" 
-	href="http://gostats.cn"><img alt="计数器申请" 
-	src="http://monster.gostats.cn/bin/count/a_441513/t_7/i_3/z_0/show_hosts/counter.png" 
-	style="border-width:0" /></a></noscript>
-	<!-- End GoStats JavaScript Based Code -->
+	
 #friend-link
 	%ul.side
-		%li= link_to "ZARD Official","http://www.wezard.net/",:class=>"tip",:title=>"日本官网",:alt=>"日本官网"
-		%li= link_to "Jap Blog","http://ameblo.jp/honmei-ani/",:class=>"tip",:title=>"一个有意思的博客",:alt=>"一个有意思的博客"
-		%li= link_to "羽田裕美","http://www.verycd.com/search/star/羽田裕美(Hiromi+Haneda)",:class=>"tip",:title=>"羽田裕美on VeryCD",:alt=>"羽田裕美on VeryCD"
-		%li= link_to "Kokia Web","http://www.kokia.com/",:class => "tip",:title=>"我很喜欢的音乐家",:alt=>"我很喜欢的音乐家"
-		%li= link_to "Alan Official","http://alan-web.jp/index.html",:class=>"tip",:title=>"支持alan",:alt=>"支持alan"
-		%li= link_to "日本音乐料理店","http://beingmusic.jp/bbs/forumdisplay.php?fid=180",:class =>"tip",:title =>"日本音乐料理店ZARD bbs",:alt=>"日本音乐料理店ZARD bbs"
-		%li= link_to "Songtaste","http://www.songtaste.com/singer/5036/",:class=>"tip",:title=>"Songtaste上的艺术家",:alt=>"Songtaste上的艺术家"
-		%li= link_to "ZARD虾米","http://www.xiami.com/artist/7107"
-		%li= link_to "ZARD百度贴吧","http://tieba.baidu.com/f?fr=bk&kw=ZARD"
-		%li= link_to "ZARD无损全专辑","http://www.verycd.com/topics/2749516/",:class=>"tip",:title=>"VeryCD上的资源",:alt=>"VeryCD上的资源"
-		%li= link_to "ZARD歌词全集","http://www.uulrc.com/singer/176f65b70b947107.html"
+		= link_to "http://www.wezard.net/",:class=>"tip",:target => '_blank',:title=>"日本官网",:alt=>"日本官网" do
+			%li ZARD Official
+		= link_to "http://ameblo.jp/honmei-ani/",:class=>"tip",:target => '_blank',:title=>"一个有意思的博客",:alt=>"一个有意思的博客" do
+			%li Jap Blog
+		= link_to "http://www.kokia.com/",:class => "tip",:target => '_blank',:title=>"我很喜欢的音乐家",:alt=>"我很喜欢的音乐家" do
+			%li Kokia Official
+		= link_to "http://alan-web.jp/index.html",:class=>"tip",:target => '_blank',:title=>"支持alan",:alt=>"支持alan" do
+			%li Alan Official
+		= link_to "http://beingmusic.jp/bbs/forumdisplay.php?fid=180",:target => '_blank',:class =>"tip",:title =>"日本音乐料理店ZARD bbs",:alt=>"日本音乐料理店ZARD bbs" do
+			%li 日本音乐料理店
+		= link_to "http://www.xiami.com/artist/7107",:target => '_blank' do
+			%li ZARD虾米
+		= link_to "http://tieba.baidu.com/f?fr=bk&kw=ZARD",:target => '_blank' do
+			%li ZARD百度贴吧
+		= link_to "http://www.verycd.com/topics/2749516/",:class=>"tip",:target => '_blank',:title=>"VeryCD上的资源",:alt=>"VeryCD上的资源" do
+			%li ZARD无损全专辑
+		= link_to "http://www.uulrc.com/singer/176f65b70b947107.html",:target => '_blank' do
+			%li ZARD歌词全集
 #my-link
 	%ul.side
-		%li= link_to "My Blog","http://heartme.heroku.com",:class=>"tip",:title=>"我的博客",:alt=>"我的博客"
-		%li= link_to "Rainbowmark","http://rainbowmark.heroku.com",:class=>"tip",:title=>"我的在线书签收藏",:alt=>"我的在线书签收藏"
-#board
-	本站由HeArtMe维护
-	%p
-		<!-- Beginning of meebo me widget code.
-		Want to talk with visitors on your page?  
-		Go to http://www.meebome.com/ and get your widget! -->
-		<embed src="http://widget.meebo.com/mm.swf?IuBocAKXUL" type="application/x-shockwave-flash" width="180" height="275"></embed>
+		= link_to "http://heartme.heroku.com",:class=>"tip",:title=>"我的博客",:alt=>"我的博客" do
+			%li My Blog
+		= link_to "http://rainbowmark.heroku.com",:class=>"tip",:title=>"我的在线书签收藏",:alt=>"我的在线书签收藏" do
+			%li Rainbowmark
+		= link_to "http://booksoul.heroku.com",:class => "tip",:title => "书魂主站",:alt => "书魂主站" do
+			%li BookSoul
+		= link_to "http://anothercountry.heroku.com",:class => "tip",:title => "我最喜欢的小说",:alt => "我最喜欢的小说" do
+			%li 远方有个女儿国
+		= link_to "http://jianghu.heroku.com",:class => "tip",:title => "梁羽生著作",:alt => "梁羽生著作" do
+			%li 白发魔女传
+#board.round
+	Railser => HeArtMe
+	

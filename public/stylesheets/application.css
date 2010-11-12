@@ -232,8 +232,10 @@ background-color: #cdfa8e;
 	float: right;
 }
 #board{
-	width: 180px;
+	width: 170px;
 	background-color: #a0faaf;
+	padding: 5px;
+	color: #ff7b49;
 }
 .paginate{
 	width: 780px;
