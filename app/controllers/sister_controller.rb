@@ -5,7 +5,7 @@ class SisterController < ApplicationController
 
   def songs
     @title = "Beautiful Sounds"
-    @categories = Category.paginate :page => params[:page],:per_page => 7
+    @categories = Category.paginate :page => params[:page],:per_page => 4
     respond_to do |format|
       format.js
       format.html 
