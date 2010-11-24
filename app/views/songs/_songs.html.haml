@@ -1,12 +1,14 @@
 .paginate.round= will_paginate @songs
 %table
 	%tr
+		%th Id
 		%th Title
 		%th Category
 		%th Love
 
 	- @songs.each do |song|
 		%tr
+			%td= song.id
 			%td= song.title
 			%td= Category.find(song.category_id).title
 			%td= song.love
