@@ -35,6 +35,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.save
+        expire_fragment(:controller => 'sister',:action => 'songs')
         format.html { redirect_to songs_path }
         format.xml  { render :xml => @song, :status => :created, :location => @song }
       else
@@ -51,6 +52,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.update_attributes(params[:song])
+        expire_fragment(:controller => 'sister',:action => 'songs')
         format.html { redirect_to songs_path }
         format.xml  { head :ok }
       else
@@ -65,7 +67,7 @@ class SongsController < ApplicationController
   def destroy
     @song = Song.find(params[:id])
     @song.destroy
-
+    expire_fragment(:controller => 'sister',:action => 'songs')
     respond_to do |format|
       format.html { redirect_to(songs_path) }
       format.xml  { head :ok }
@@ -80,6 +82,7 @@ class SongsController < ApplicationController
   def create_category
     @category = Category.new(params[:category])
     if @category.save
+      expire_fragment(:controller => 'sister',:action => 'songs')
       redirect_to zard_songs_path
     else
       redirect_to category_path
@@ -89,6 +92,7 @@ class SongsController < ApplicationController
   def destroy_category
     @category = Category.find(params[:id])
     @category.destroy
+    expire_fragment(:controller => 'sister',:action => 'songs')
     redirect_to zard_songs_path  
   end
 end
