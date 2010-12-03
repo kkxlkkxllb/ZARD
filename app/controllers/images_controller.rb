@@ -9,6 +9,9 @@ class ImagesController < ApplicationController
     end
   end
   
+  def show
+  end
+  
   def new
     @image = Image.new
     @title = "New Image"
