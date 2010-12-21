@@ -1,7 +1,8 @@
 class SisterController < ApplicationController
-  caches_page :index
+  #caches_page :index
   def index
     @title = "Beautiful Heart"
+    @songs = Song.all
   end
 
   def songs

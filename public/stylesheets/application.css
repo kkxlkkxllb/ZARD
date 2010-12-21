@@ -1,5 +1,5 @@
 body{
-	background-color: #ebdcfb;
+	background-color: #e0fcf0;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 *:link, *:visited, *:hover, *:active, *:focus {
@@ -247,4 +247,27 @@ background-color: #cdfa8e;
 	width: 140px;
 	height: 290px;
 	margin: 20px;
+}
+#foot{
+	width: 760px;
+	padding: 10px;
+	background-color: #6ed6fb;
+}
+#applet{
+	width: 760px;
+	height: 230px;
+	padding: 10px;
+	background-color: #ddfbb4;
+}
+#visiter{
+	float: left;
+	width: 220px;
+	height: 220px;
+}
+#ads{
+	float: right;
+	width: 500px;
+	height: 220px;
+	
+	color: #e9a1f8;
 }
