@@ -4,6 +4,7 @@
 	= f.text_field :title
 	= f.label :url
 	= f.text_field :url
+	%p
 	= f.label :category_id
 	= f.select :category_id,Category.all.collect{|s| [s.title,s.id]}
 	%p

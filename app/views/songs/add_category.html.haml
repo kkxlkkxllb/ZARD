@@ -1,12 +1,13 @@
-= form_for @category,:url => new_category_path do |f|
-	%p
-	=f.label :title
-	=f.text_field :title
-	%p
-	=f.label :iamge
-	=f.text_field :image
-	%p
-	=f.label :date
-	=f.date_select :date,:start_year => 1990,:order => [:year,:month]
-	%p
-	=f.submit
+.form.round
+	- form_for @category,:url => new_category_path do |f|
+		%p
+		=f.label :title
+		=f.text_field :title,:class => 'field'
+		%p
+		=f.label :iamge
+		=f.text_field :image,:class => 'field'
+		%p
+		=f.label :date
+		=f.date_select :date,:start_year => 1990,:order => [:year,:month]
+		%p
+		=f.submit

@@ -18,10 +18,10 @@
 		.toggle{:id => dom_id(category)}
 			%ul.song
 				- for song in @songs
-					%li
+					%li.round{:class => cycle('c3','c4') }
 						= song.title 
-						= link_to "欣赏音乐",listen_url(song),:class =>"listen"
-						= link_to "LOVE IT",love_url(song),:remote=>true,:class=>dom_id(song)
+						= link_to "欣赏音乐",listen_url(song),:class =>"listen round"
+						= link_to "LOVE ME",love_url(song),:remote=>true,:class=>dom_id(song)
 						.love{:id => dom_id(song)}
 							= song.love
 							human love

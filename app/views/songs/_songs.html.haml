@@ -7,7 +7,7 @@
 		%th Love
 
 	- @songs.each do |song|
-		%tr
+		%tr{:class => cycle('c1','c2') }
 			%td= song.id
 			%td= song.title
 			%td= Category.find(song.category_id).title

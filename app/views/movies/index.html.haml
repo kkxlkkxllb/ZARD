@@ -5,7 +5,7 @@
     
 
   - @movies.each do |movie|
-    %tr
+    %tr{:class => cycle('c1','c2') }
       %td= movie.title
       %td= image_tag(movie.image,:width=>"180",:height=>"150")
       %td= link_to 'Edit', edit_movie_path(movie)
