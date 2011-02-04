@@ -16,6 +16,8 @@ $(document).ready(function() {
 	$('.listen').nyroModal({
 		bgColor:'#ecd8fb'
 	});
+	$("a[rel='colorbox']").colorbox({transition:"fade"});
+	
 
 	
 })
