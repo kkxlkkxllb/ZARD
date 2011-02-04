@@ -31,6 +31,9 @@ h1:hover{
 h3{
 	color: #c2d6fb;
 }
+ul{
+	list-style: none;
+}
 .round {
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px;
