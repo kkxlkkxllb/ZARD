@@ -17,9 +17,9 @@
 					#navigation.round
 						%ul.nav
 							%li= link_to_unless_current "Home",root_path,:class => "tip",:title=>"ZARD首页",:alt =>"ZARD首页"
-							%li= link_to_unless_current "Songs",zard_songs_path,:class =>"tip",:title=>"所有歌曲",:alt=>"所有歌曲"
+							%li= link_to_unless_current "Songs",zard_songs_path,:class =>"tip",:title=>"专辑分享",:alt=>"专辑分享"
 							%li= link_to_unless_current "Images",zard_images_path,:class=>"tip",:title=>"姐姐的图像",:alt=>"姐姐的图像"
-							%li= link_to_unless_current "Movies",zard_movies_path,:class=>"tip",:title=>"所有影象",:alt=>"所有影象"
+							%li= link_to_unless_current "Movies",zard_movies_path,:class=>"tip",:title=>"影像资源分享",:alt=>"影像资源分享"
 							- if current_user
 								%li= link_to_unless_current "MSong",songs_path
 								%li= link_to_unless_current "NewImage",new_image_path
