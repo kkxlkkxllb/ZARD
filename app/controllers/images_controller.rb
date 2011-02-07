@@ -1,4 +1,5 @@
 class ImagesController < ApplicationController
+  before_filter :require_user
   def index
     @images = Image.paginate :page => params[:page], :per_page => 12
     @title ="Manage Images"

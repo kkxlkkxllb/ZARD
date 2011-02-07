@@ -14,8 +14,11 @@ Zard::Application.routes.draw do
   match "zard/images" => "sister#images"
   match "zard/movies" => "sister#movies"
   #songs
+  match "categories" => "songs#category_index"
   match "category" => "songs#add_category"
   match "new/category" => "songs#create_category"
+  match "category/:id/edit" => "songs#edit_category",:as => :edit
+  match "category/:id/update" => "songs#update_category",:as => :update
   match "category/:id/destroy" => "songs#destroy_category",:as => :delete
   match "category/:id/toggle" => "sister#song_toggle",:as => :toggle
   match "song/:id/love" => "sister#song_love",:as => :love

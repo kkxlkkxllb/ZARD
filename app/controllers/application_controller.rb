@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     def require_user
       unless current_user
         store_location
-        redirect_to new_user_session_url, :notice => "You must be logged in to access this page"
+        redirect_to login_path, :notice => "You must be logged in to access this page"
         return false
       end
     end

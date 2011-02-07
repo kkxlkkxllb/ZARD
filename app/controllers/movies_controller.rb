@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  before_filter :require_user
   def index
     @title = "Manage movies"
     @movies = Movie.all

@@ -1,0 +1,11 @@
+%table
+	%tr
+		%th Id
+		%th Title
+
+	- @categories.each do |category|
+		%tr{:class => cycle('c1','c2') }
+			%td= category.id
+			%td= category.title
+			%td= link_to 'Edit', edit_path(category)
+			

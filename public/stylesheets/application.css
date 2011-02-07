@@ -234,6 +234,8 @@ background-color: #cdfa8e;
 	width: 200px;
 	height: 180px;
 	float: left;
+	border-style: ridge;
+	border-color: #6ed6fb;
 }
 .movie-info{
 	width: 550px;

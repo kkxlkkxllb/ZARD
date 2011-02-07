@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  before_filter :require_user
   # GET /songs
   # GET /songs.xml
   def index
@@ -73,6 +74,11 @@ class SongsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def category_index
+    @title = "All categories"
+    @categories = Category.all
+  end
 #view add_category.html.haml
   def add_category
     @title = "Add Category"
@@ -83,9 +89,26 @@ class SongsController < ApplicationController
     @category = Category.new(params[:category])
     if @category.save
       #expire_fragment(:controller => 'sister',:action => 'songs')
-      redirect_to zard_songs_path
+      redirect_to categories_path
     else
       redirect_to category_path
+    end
+  end
+  
+  def edit_category
+    @title = "Edit Category"
+    @category = Category.find(params[:id])
+  end
+  
+  def update_category
+    @category = Category.find(params[:id])
+    respond_to do |format|
+      if @category.update_attributes(params[:category])
+        format.html { redirect_to categories_path }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit_category" }
+      end
     end
   end
   
