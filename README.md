@@ -6,7 +6,7 @@ You can not only listen her songs online but also read her lyrics on this site.
 
 Please visit [http://zard.heroku.com](http://zard.heroku.com).
 
-This site is based on Ruby 1.8.7 & Rails 3.0 and deployed on [Heroku](http://heroku.com).
+This site is based on Ruby 1.9.2 & Rails 3.0.3 and deployed on [Heroku](http://heroku.com).
 
 Plugins Used
 ------------
