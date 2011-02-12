@@ -73,12 +73,12 @@ background-color: #cdfa8e;
 	position: relative;
 }
 #container{
-	width: 1000px;
+	width: 1020px;
 	margin: 0 auto;
 	
 }
 #head{
-	width: 980px;
+	width: 1000px;
 	height: 100px;
 	padding: 10px;
 	
@@ -106,7 +106,7 @@ background-color: #cdfa8e;
 	padding: 10px;
 }
 #sidebar{
-	width: 180px;
+	width: 200px;
 	height: auto;
 	float: right;
 	background-color: #7983f6;
@@ -116,11 +116,11 @@ background-color: #cdfa8e;
 	width: 170px;
 }
 #friend-link{
-	width: 180px;
+	width: 200px;
 	background-color: #5e5e5e;
 }
 #my-link{
-	width: 180px;
+	width: 200px;
 	background-color: #7d8fa1;
 }
 #sister-info{
@@ -244,7 +244,7 @@ background-color: #cdfa8e;
 #board{
 	width: 170px;
 	background-color: #a0faaf;
-	padding: 5px;
+	
 	color: #ff7b49;
 }
 .paginate{
@@ -280,6 +280,11 @@ background-color: #cdfa8e;
 	height: 220px;
 	
 	color: #e9a1f8;
+}
+#adside{
+	width: 200px;
+	height: 200px;
+	
 }
 .c1{
 	background-color: #c9e8fc;
