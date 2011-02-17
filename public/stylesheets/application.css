@@ -173,7 +173,8 @@ background-color: #cdfa8e;
 
 .song li{
 	display: block;
-	line-height: 25px;
+	line-height: 35px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #646464;
 	border-bottom-style: solid;
@@ -183,7 +184,7 @@ background-color: #cdfa8e;
 .song li a{
 	padding: 5px;
 }
-.song li a:hover{
+.song li a.listen:hover{
 	background-color: #adfcd4;
 	
 }
