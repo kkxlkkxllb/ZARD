@@ -9,9 +9,11 @@ $(document).ready(function() {
 	});
 	$('.tip').poshytip({
 		className: 'tip-twitter',
-			bgImageFrameSize: 9,
-			offsetX: -20,
-			offsetY: 20		
+			showTimeout: 1,
+				alignTo: 'target',
+				alignX: 'center',
+				offsetY: 5,
+				allowTipHover: false	
 	});
 	$('.listen').nyroModal({
 		bgColor:'#ecd8fb'
