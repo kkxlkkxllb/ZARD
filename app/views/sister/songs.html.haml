@@ -1,9 +1,12 @@
 #songs
 	= render :partial => 'songs'
-
 #song-end.round
 	以上内容选自ZARD Official，专辑全收录
 :javascript
-	$('.pagination a').live('click',function(){$(".pagination").html("Page is loading...");$.get(this.href, null, null, "script");return false;});
+	$('.pagination a').live('click',function(){$(".pagination").html("Page is loading...");$.get(this.href);history.pushState(null, "", this.href);return false;});
+	$(window).bind("popstate", function () {  
+	  $.getScript(location.href);  
+	});
+
 			
 		

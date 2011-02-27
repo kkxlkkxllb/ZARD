@@ -7,7 +7,7 @@ div#nyroModalFull div#nyroModalLoading {
 	width: 150px;
 	height: 150px;
 	text-indent: -9999em;
-	background: #fff url(../img/ajaxLoader.gif) no-repeat;
+	background: #fff url(/images/ajaxLoader.gif) no-repeat;
 	background-position: center;
 }
 div#nyroModalFull div#nyroModalLoading.error {
@@ -31,7 +31,7 @@ div#nyroModalFull div#nyroModalWrapper a#closeBut {
 	width: 12px;
 	height: 12px;
 	text-indent: -9999em;
-	background: url(../img/close.gif) no-repeat;
+	background: url(/images/close.gif) no-repeat;
 	outline: 0;
 }
 div#nyroModalFull div#nyroModalWrapper h1#nyroModalTitle {
@@ -94,12 +94,12 @@ div#nyroModalFull div#nyroModalWrapper div#nyroModalContent a.nyroModalPrev {
 	left: 0;
 }
 div#nyroModalFull div#nyroModalWrapper div#nyroModalContent a.nyroModalPrev:hover {
-	background-image: url(../img/prev.gif);
+	background-image: url(/images/prev.gif);
 }
 div#nyroModalFull div#nyroModalWrapper div#nyroModalContent a.nyroModalNext {
 	right: 0;
 	background-position: right 20%;
 }
 div#nyroModalFull div#nyroModalWrapper div#nyroModalContent a.nyroModalNext:hover {
-	background-image: url(../img/next.gif);
+	background-image: url(/images/next.gif);
 }
