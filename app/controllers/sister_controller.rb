@@ -30,13 +30,6 @@ class SisterController < ApplicationController
     @movies = Movie.all
   end
   
-  def song_toggle
-    @category = Category.find(params[:id])
-    respond_to do |format|
-      format.js
-    end
-  end
-  
   def song_love
     @song = Song.find(params[:id])
     @love = @song.love+1

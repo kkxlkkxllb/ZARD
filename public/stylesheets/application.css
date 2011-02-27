@@ -147,6 +147,7 @@ background-color: #cdfa8e;
 	background-color: #aefdf4;
 	border-style: solid;
 	border-color: #c4fbc3;
+	cursor: pointer;
 }
 .category-image{
 	width: 200px;

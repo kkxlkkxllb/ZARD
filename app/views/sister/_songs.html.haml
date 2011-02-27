@@ -2,12 +2,12 @@
 	= will_paginate @categories
 #temp
 	- for category in @categories
-		.category
+		.category{:onclick =>"$('#category_#{category.id}').toggle(1000);"}
 			.category-image
 				= image_tag(category.image,:width=>"200",:height=>"180")
 			.category-info
 				%h3
-				= link_to category.title,toggle_url(category),:remote => true,:class=>"tip",:title=>"点击查看/隐藏歌曲列表"
+				= category.title
 				%p
 				发行日期：
 				= category.date.strftime('%Y-%m')
