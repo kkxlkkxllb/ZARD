@@ -2,7 +2,7 @@
 	= will_paginate @categories
 #temp
 	- for category in @categories
-		.category{:onclick =>"$('#category_#{category.id}').toggle(1000);"}
+		.category{:onclick =>"$('#category_#{category.id}').slideToggle('slow');"}
 			.category-image
 				= image_tag(category.image,:width=>"200",:height=>"180")
 			.category-info
